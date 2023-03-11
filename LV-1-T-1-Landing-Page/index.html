@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Rio | Landing Page</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <!-- AOS liabrary -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        :root {
+            font-size: 62.5%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-size: 1.6rem;
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(50%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        .fadeInUp {
+            animation: 1s fadeInUp;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                transform: translateX(50%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        .fadeInLeft {
+            animation: 1s fadeInLeft;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class="m-0 p-0 box-border font-['Inter']">
+
+        <!-- main container -->
+        <div class=" h-100vh overflow-x-hidden overflow-y-auto relative">
+            <!-- background -->
+            <img loading="lazy" src="./assets/hero-bg.svg"
+                class="w-[71rem] h-[96.3rem] absolute -right-[2rem] object-cover -z-10">
+
+            <!-- header section -->
+            <header id="home" class="w-11/12 max-w-[1180px] flex justify-between items-center mx-auto pt-[4rem]">
+                <!-- logo -->
+                <div>
+                    <p class="font-[700] text-[2.4rem] leading-[2.9rem] text-[#EE696A] cursor-pointer fadeInUp">
+                        Neo Rio
+                    </p>
+                </div>
+
+                <!-- nav items -->
+                <div>
+                    <ul
+                        class="w-[33.2rem] flex justify-between font-[500] text-[1.6rem] text-[#527384] leading-[1.9rem]">
+                        <li class="hover:text-[#EE696A] hover:underline cursor-pointer fadeInUp">
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li class="hover:text-[#EE696A] hover:underline cursor-pointer fadeInUp">
+                            <a href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li class="hover:text-[#EE696A] hover:underline cursor-pointer fadeInUp">
+                            <a href="#products">
+                                Products
+                            </a>
+                        </li>
+                        <li class="hover:text-[#EE696A] hover:underline cursor-pointer fadeInUp">
+                            <a href="#testimonials">
+                                Testimonials
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- contact button -->
+                <button
+                    class="w-[16rem] h-[5.2rem] bg-[#EE696A] text-[#fff] border-[2px] border-transparent rounded-[10px] flex justify-center items-center 
+                        hover:scale-[98%] hover:text-[#EE696A] hover:bg-[#fff] hover:border-[#EE696A] transition-all duration-200 fadeInUp">
+                    <p class="font-[500] text-[1.6rem] leading-[1.9rem]">
+                        Contact Us
+                    </p>
+                </button>
+
+            </header>
+
+            <!-- hero section -->
+            <section class="w-11/12 max-w-[1180px] flex justify-between items-center mx-auto mt-[10rem]">
+                <!-- left part -->
+                <div class="w-[49.7rem]">
+                    <!-- heading -->
+                    <div>
+                        <p class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#EE696A]" data-aos="fade-up">
+                            Real Leather
+                        </p>
+                        <h1 class="font-[700] text-[7.6rem] leading-[9.2rem] text-[#000]" data-aos="fade-up">
+                            Summer Sale <br>
+                            <span class="text-[#EE696A] fadeInUp">34% OFF</span>
+                        </h1>
+                    </div>
+
+                    <!-- para -->
+                    <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384] pt-[6rem] pb-[4rem]" data-aos="fade-up">
+                        Snake plant's gorgeous world-shaped leaves colored with mottlet greens are briliantly captured
+                        in this striking faux plant.
+                        Planted in a clean, contemporary white case
+                    </p>
+
+                    <!-- get started button -->
+                    <button class="w-[16.3rem] h-[5.1rem] rounded-[1rem] bg-[#EE696A] font-[500] text-[1.6rem] leading-[1.9rem] text-[#fff]
+                            hover:scale-[98%] transition-transform duration-200 cursor-pointer" data-aos="fade-up">
+                        Get Started
+                    </button>
+
+                    <!-- Testimonials -->
+                    <div class="w-[47.6rem] grid grid-cols-2 grid-rows-2 gap-[5rem] pt-[6rem]">
+                        <div class="flex gap-[2rem]" data-aos="fade-up">
+                            <!-- icon -->
+                            <div
+                                class="w-[5.2rem] h-[5.2rem] bg-[#ECECEC] rounded-[1rem] flex justify-center items-center">
+                                <img loading="lazy" src="./assets/calendar.svg" class="w-[2rem] h-[2rem]">
+                            </div>
+                            <div class="flex flex-col gap-[0.6rem]">
+                                <p class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]">
+                                    12
+                                </p>
+                                <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]">
+                                    Years Experience
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-[2rem]" data-aos="fade-up">
+                            <!-- icon -->
+                            <div
+                                class="w-[5.2rem] h-[5.2rem] bg-[#ECECEC] rounded-[1rem] flex justify-center items-center">
+                                <img loading="lazy" src="./assets/award.svg" class="w-[2rem] h-[2rem]">
+                            </div>
+                            <div class="flex flex-col gap-[0.6rem]">
+                                <p class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]">
+                                    4235
+                                </p>
+                                <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]">
+                                    Total Achievement
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-[2rem]" data-aos="fade-up">
+                            <!-- icon -->
+                            <div
+                                class="w-[5.2rem] h-[5.2rem] bg-[#ECECEC] rounded-[1rem] flex justify-center items-center">
+                                <img loading="lazy" src="./assets/stack.svg" class="w-[2rem] h-[2rem]">
+                            </div>
+                            <div class="flex flex-col gap-[0.6rem]">
+                                <p class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]">
+                                    3468
+                                </p>
+                                <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]">
+                                    Happy Students
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-[2rem]" data-aos="fade-up">
+                            <!-- icon -->
+                            <div
+                                class="w-[5.2rem] h-[5.2rem] bg-[#ECECEC] rounded-[1rem] flex justify-center items-center">
+                                <img loading="lazy" src="./assets/star.svg" class="w-[2rem] h-[2rem]">
+                            </div>
+                            <div class="flex flex-col gap-[0.6rem]">
+                                <p class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]">
+                                    3k +
+                                </p>
+                                <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]">
+                                    Positive Reviews
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right part -->
+                <div class="relative">
+                    <div>
+                        <img loading="lazy" src="./assets/hero-bg-img.svg" class="w-[65.8rem] h-[75.4rem] fadeInLeft">
+                    </div>
+                    <!-- review -->
+                    <div
+                        class="w-[37.8rem] h-[14.6rem] absolute left-[14rem] bottom-[4.9rem] bg-[#fff] rounded-[1rem] p-[2rem] drop-shadow-lg" data-aos="fade-up">
+                        <div class="w-full flex items-center mb-[2rem]">
+                            <img loading="lazy" src="./assets/hero-profile-img.svg" class="w-[5rem] h-[5rem] mr-[2rem]">
+                            <!-- details -->
+                            <div class="flex flex-col gap-[1rem] mr-[3rem]">
+                                <!-- name -->
+                                <div class="w-full flex items-center justify-between">
+                                    <p class="font-[500] text-[1.6rem] leading-[1.9rem] text-[#000]">
+                                        Mary Hardy
+                                    </p>
+                                    <img loading="lazy" src="./assets/dot.svg" class="w-[0.6rem] h-[0.6rem]">
+                                    <img loading="lazy" src="./assets/usa-flag.svg" class="w-[2rem] h-[1.3rem]">
+                                </div>
+                                <!-- date -->
+                                <div>
+                                    <p class="font-[500] text-[1.2rem] leading-[1.5rem] text-[#262323]">
+                                        TUE 24, JANUARY 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- rating -->
+                            <div class="flex gap-[0.2rem]">
+                                <img loading="lazy" src="./assets/rating-star.svg" class="w-[1.8rem] h-[1.8rem]">
+                                <img loading="lazy" src="./assets/rating-star.svg" class="w-[1.8rem] h-[1.8rem]">
+                                <img loading="lazy" src="./assets/rating-star.svg" class="w-[1.8rem] h-[1.8rem]">
+                                <img loading="lazy" src="./assets/rating-star.svg" class="w-[1.8rem] h-[1.8rem]">
+                                <img loading="lazy" src="./assets/rating-star.svg" class="w-[1.8rem] h-[1.8rem]">
+                            </div>
+                        </div>
+
+                        <!-- desc -->
+                        <p class="font-[400] text-[1.5rem] leading-[1.8rem] text-[#527384]">
+                            In Just a Few short years . I build the brand to millions o f social media followers
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section 1 -->
+            <section id="about" class="w-11/12 max-w-[1180px] flex items-center mx-auto relative mt-[15rem] pt-[5rem]">
+                <div>
+                    <img src="./assets/about-1.svg" class="w-[36rem] h-[48rem] mr-[3rem]"  data-aos="fade-right">
+                </div>
+                <div class="mr-[3rem]">
+                    <div class="w-[27.8rem] h-[22.5rem] rounded-[1rem] bg-[#fff] drop-shadow-lg mt-[2rem]"  data-aos="fade-up">
+                        <img src="./assets/about-2.svg" class="w-[27.8rem] h-[22.5rem]">
+                    </div>
+                    <div class="w-[27.8rem] h-[22.5rem] rounded-[1rem] bg-[#fff] drop-shadow-lg mt-[2rem]"  data-aos="fade-up">
+                        <img src="./assets/about-3.svg" class="w-[27.8rem] h-[22.5rem]">
+                    </div>
+                </div>
+                <div class="max-w-[38.9rem]">
+                    <h1 class="font-[600] text-[6rem] leading-[7.3rem] text-[#000] mb-[3rem]"  data-aos="fade-up">
+                        About Us
+                    </h1>
+                    <p class="font-[400] text-[1.6rem] leading-[3rem] text-[#527384] mb-[3rem]"  data-aos="fade-up">
+                        This Luxurious shower gel effectivly cleanses the body, swiftly capturing drit and grime that
+                        may be lingering
+                        at the surface
+                    </p>
+                    <button
+                        class="w-[22.3rem] h-[5.1rem] bg-[#EE696A] rounded-[1rem] flex justify-center items-center
+                            font-[500] text-[1.6rem] leading-[1.9rem] text-[#fff] hover:scale-[98%] transition-transform duration-200"  data-aos="fade-up">
+                        Browse Full Collection
+                    </button>
+                </div>
+                <div class="absolute top-0 right-0" data-aos="fade-left">
+                    <img src="./assets/about-4.svg" class="w-[17.2rem] h-[17.2rem]">
+                </div>
+            </section>
+
+            <!-- section 2 -->
+            <section id="products" class="w-11/12 max-w-[1180px] flex items-center mx-auto mt-[20rem]">
+                <!-- background -->
+                <img src="./assets/new-bg.svg" class="w-[94rem] h-[150rem] left-0 absolute -z-10">
+
+                <!-- left part -->
+                <img src="./assets/new-left.svg" class="w-[56rem] h-[74.3rem]"  data-aos="fade-right">
+
+                <!-- right part  -->
+                <div>
+                    <!-- heading -->
+                    <h1 class="font-[600] text-[6rem] leading-[7.3rem] text-[#000] mb-[5rem]" data-aos="fade-up">
+                        Whats New ?
+                    </h1>
+
+                    <!-- part 1 -->
+                    <div class="flex justify-center items-center gap-[5rem] mb-[7rem]">
+                        <img src="./assets/new-right-1.svg" class="w-[16rem] h-[16rem]" data-aos="fade-up">
+                        <div class="flex flex-col gap-[2rem]">
+                            <h2 class="font-[600] text-[1.8rem] leading-[3rem] text-[#000]" data-aos="fade-up">
+                                Huate Counture Fashion Show Fall-Winter 2022
+                            </h2>
+                            <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]" data-aos="fade-up">
+                                The Fall-Winter 2022-2023 Haute Couture collection univelied at the palais Galliera in
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex justify-center items-center gap-[5rem] mb-[7rem]">
+                        <img src="./assets/new-right-2.svg" class="w-[16rem] h-[16rem]" data-aos="fade-up">
+                        <div class="flex flex-col gap-[2rem]">
+                            <h2 class="font-[600] text-[1.8rem] leading-[3rem] text-[#000]" data-aos="fade-up">
+                                Clothes Hot Sale - Big Sales & New Arrivals
+                            </h2>
+                            <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]" data-aos="fade-up">
+                                Trendy Fashion Clothing, Fit For Every Occasion, Great Quality with Big Discount
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- part 3 -->
+                    <div class="flex justify-center items-center gap-[5rem]">
+                        <img src="./assets/new-right-3.png" class="w-[16rem] h-[16rem]" data-aos="fade-up">
+                        <div class="flex flex-col gap-[2rem]">
+                            <h2 class="font-[600] text-[1.8rem] leading-[3rem] text-[#000]" data-aos="fade-up">
+                                Sports Clothing and Outifits Designer Fashion and quality
+                            </h2>
+                            <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]" data-aos="fade-up">
+                                Trendy Fashion Clothing, Fit For Every Occasion, Great Quality with Big Discount
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section 3 -->
+            <section class="w-11/12 max-w-[1180px] flex items-center mx-auto mt-[20rem]">
+                <!-- background -->
+                <img src="./assets/02-bg-right.svg" class="w-[60rem] h-[62rem] absolute right-0 -z-10">
+
+                <!-- left part  -->
+                <div class="w-[63rem]">
+                    <!-- number -->
+                    <div class="font-[600] text-[37.6rem] leading-[45.5rem] text-[#ECEDED]" data-aos="fade-up">
+                        02
+                    </div>
+
+                    <!-- heading -->
+                    <h2 class="font-[600] text-[6rem] leading-[7.3rem] text-[#000] mb-[3rem] -mt-[4rem]" data-aos="fade-up">
+                        Benjoour Sunshine Liguid Bronzer Shade
+                    </h2>
+
+                    <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384] mb-[3rem]" data-aos="fade-up">
+                        Yet preference connection unpleasant yet melancholy but end appernance partiality estimating
+                        termenated day everything
+                    </p>
+
+                    <div class="flex gap-[3rem]">
+                        <button class="w-[28rem] h-[6.4rem] bg-[#EE696A] rounded-[1rem] font-[500] text-[1.6rem] leading-[1.9rem] text-[#fff] flex justify-center
+                                items-center hover:scale-[98%] transition-transform duration-200" data-aos="fade-up">
+                            SCAN QR FOR DISCOUNT
+                        </button>
+                        <img src="./assets/QR.svg" class="w-[6.4rem] h-[6.4rem]" data-aos="fade-up">
+                    </div>
+                </div>
+
+                <!-- right part  -->
+                <img src="./assets/02-right-img.svg" class="w-[56rem] h-[74.3rem]" data-aos="fade-left">
+            </section>
+
+            <!-- section 4 -->
+            <section id="testimonials" class="w-11/12 max-w-[1180px] flex justify-between items-center mx-auto mt-[20rem]">
+                <!-- left part -->
+                <div class="w-[53.4rem]">
+                    <h2 class="font-[600] text-[6rem] leading-[7.3rem] text-[#000] mb-[3rem]" data-aos="fade-up">
+                        Authentic Product
+                    </h2>
+                    <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384] mb-[4.9rem]" data-aos="fade-up">
+                        Confined smallest unpacked delicate. Why sir end believe uncivil respect . Always get adieus
+                        nature day course for common.
+                        My little garret repair to desire he esteem
+                    </p>
+                    <button class="w-[20.5rem] h-[6.3rem] bg-[#EE696A] rounded-[1rem] font-[500] text-[1.6rem] leading-[1.9rem] text-[#fff] flex justify-center 
+                            items-center hover:scale-[98%] transition-transform duration-200" data-aos="fade-up">
+                        EXPLORE MORE
+                    </button>
+                </div>
+
+                <!-- right part -->
+                <div class="grid grid-cols-2 grid-rows-2 gap-[5rem]">
+                    <!-- box 1 -->
+                    <div class="w-[22.4rem] flex flex-col justify-center items-center gap-[1rem] text-center">
+                        <!-- logo -->
+                        <img src="./assets/guarantee.svg" class="w-[5rem] h-[5rem]" data-aos="fade-up">
+                        <h3 class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]" data-aos="fade-up">
+                            100% Genuin Product Gurrentee
+                        </h3>
+                        <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]" data-aos="fade-up">
+                            Believing In design active temper be unesay
+                        </p>
+                    </div>
+
+                    <!-- box 2 -->
+                    <div class="w-[22.4rem] flex flex-col justify-center items-center gap-[1rem] text-center">
+                        <!-- logo -->
+                        <img src="./assets/truck.svg" class="w-[5rem] h-[5rem]" data-aos="fade-up">
+                        <h3 class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]" data-aos="fade-up">
+                            Gurrentee On Time Delivery
+                        </h3>
+                        <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]" data-aos="fade-up">
+                            Particality or in a particular principles as believing
+                        </p>
+                    </div>
+
+                    <!-- box 3 -->
+                    <div class="w-[22.4rem] flex flex-col justify-center items-center gap-[1rem] text-center">
+                        <!-- logo -->
+                        <img src="./assets/money-bag.svg" class="w-[5rem] h-[5rem]" data-aos="fade-up">
+                        <h3 class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]" data-aos="fade-up">
+                            100% Return Gurrantee & Exchange
+                        </h3>
+                        <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]" data-aos="fade-up">
+                            NAy likely her length sooner lively doors income
+                        </p>
+                    </div>
+
+                    <!-- box 4 -->
+                    <div class="w-[22.4rem] flex flex-col justify-center items-center gap-[1rem] text-center">
+                        <!-- logo -->
+                        <img src="./assets/support.svg" class="w-[5rem] h-[5rem]" data-aos="fade-up">
+                        <h3 class="font-[600] text-[2.4rem] leading-[2.9rem] text-[#000]" data-aos="fade-up">
+                            24x7 Customer Support
+                        </h3>
+                        <p class="font-[400] text-[1.6rem] leading-[1.9rem] text-[#527384]" data-aos="fade-up">
+                            Offending belongging promotion provision an.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer section -->
+            <footer class="w-full bg-[#000] p-[13rem] flex justify-between items-center mt-[20rem]">
+                <!-- part 1 -->
+                <div class="flex flex-col gap-[4.4rem]"  data-aos="fade-right">
+                    <!-- logo -->
+                    <p class="font-[700] text-[2.4rem] leading-[2.9rem] text-[  ]">
+                        Neo Rio
+                    </p>
+                    <!-- mail -->
+                    <a href="#" class="font-[500] text-[2.4rem] leading-[2.9rem] text-[#FBFCFE] hover:underline">
+                        demo@dev.to
+                    </a>
+                </div>
+
+                <!-- part 2 -->
+                <div class="flex flex-col items-center gap-[4.9rem]" data-aos="fade-up">
+                    <!-- nav items -->
+                    <ul class="font-[500] text-[1.6rem] leading-[1.9rem] text-[#fff] uppercase flex gap-[4.1rem]">
+                        <a href="#home" class="hover:underline hover:text-[#ee696a]">
+                            Home
+                        </a>
+                        <a href="#about" class="hover:underline hover:text-[#ee696a]">
+                            About Us
+                        </a>
+                        <a href="#products" class="hover:underline hover:text-[#ee696a]">
+                            Our Work
+                        </a>
+                        <a href="#" class="hover:underline hover:text-[#ee696a]">
+                            Case Studies
+                        </a>
+                    </ul>
+
+                    <!-- social media -->
+                    <ul class="flex gap-[2.5rem]">
+                        <a href="#" class="hover:scale-125 transition-transform duration-200">
+                            <img src="./assets/Google.svg" class="w-[2.65rem] h-[2.65rem]">
+                        </a>
+                        <a href="#" class="hover:scale-125 transition-transform duration-200">
+                            <img src="./assets/Twitter.svg" class="w-[2.65rem] h-[2.65rem]">
+                        </a>
+                        <a href="#" class="hover:scale-125 transition-transform duration-200">
+                            <img src="./assets/Pinterest.svg" class="w-[2.65rem] h-[2.65rem]">
+                        </a>
+                        <a href="#" class="hover:scale-125 transition-transform duration-200">
+                            <img src="./assets/LinkedIn.svg" class="w-[2.65rem] h-[2.65rem]">
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- part 3 -->
+                <div class="flex flex-col gap-[3.9rem]" data-aos="fade-left">
+                    <p class="font-[500] text-[1.6rem] leading-[1.9rem] text-[#fff] uppercase">
+                        Stay Up To Date
+                    </p>
+                    <div class="flex justify-between items-center relative">
+                        <input type="text" placeholder="Your mail address" class="bg-transparent font-[500] text-[1.2rem] leading-[1.5rem] h-[4.6rem] w-[24rem] border-solid border-[1px] border-[#DCEAF7] 
+                        rounded-[0.3rem] text-[#fff] pl-2">
+                        <button class="hover:scale-[95%] transition-all duration-200 absolute right-2">
+                            <img src="./assets/send.svg" class="w-[3.6rem] h-[3.6rem]">
+                        </button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 1000
+      });
+    </script>
+
+</body>
+
+</html>
